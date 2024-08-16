@@ -1,0 +1,27 @@
+.category-trips-single
+  .category-trips-single-inner-wrap
+  .category-trip-content-wrap {
+  padding-top: 24px;
+  padding: 24px;
+}
+.wpte-elementor-widget
+  .category-trips-single
+  .category-trips-single-inner-wrap {
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.wpte-elementor-widget
+  .category-trips-single
+  .category-trips-single-inner-wrap
+  .category-trip-detail-wrap
+  .category-trip-prc-wrap {
+  min-height: 108px;
+}
+.wpte-elementor-widget
+  .category-trips-single
+  .category-trips-single-inner-wrap
+  .category-trip-detail-wrap
+  .button:hover {
+  background-color: var(--theme-color2);
+}

@@ -1,0 +1,171 @@
+/*
+ Theme Name:   Travolo Child
+ Theme URI:    http://vecurosoft.com/products/wordpress/travolo/
+ Description:  This is a child theme for Travolo WordPress Theme
+ Author:       Vecurosoft
+ Author URI:   http://vecurosoft.com/
+ Template:     travolo
+ Version:      1.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         two-columns, three-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, theme-options, editor-style, featured-images, microformats, post-formats,  sticky-post, threaded-comments, translation-ready
+ Text Domain:  travolo-child
+*/
+
+/*  [ Add your custom css below ]
+- - - - - - - - - - - - - - - - - - - - */
+.wpte-elementor-widget {
+    --primary-color: var(--theme-color) !important;
+}
+:root{
+	--primary-color: var(--theme-color) !important;
+	--vs-border-color: var(--theme-color) !important;
+	--theme2-color-rgb: 255, 193, 7;
+	--border-color: var(--theme-color) !important;
+}
+/* ------------------------------------ */
+
+/* ----- Custom scroll ----- */
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: var(--theme-color);
+	border-radius: 10px;
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
+/* ----- End custom scroll ----- */
+
+/* ----- Custom trip ----- */
+.category-trips-single .category-trips-single-inner-wrap .price-holder .actual-price {
+	font-size: 24px !important;
+}
+.mona-sec-tour .category-trip-title,
+.mona-sec-blog .blog-content .blog-title,
+.category-trips-single .category-trips-single-inner-wrap .category-trip-prc-title-wrap .category-trip-title {
+	 display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 67px;
+}
+.category-trips-single.wpte_new-layout .category-trips-single-inner-wrap .category-trip-detail-wrap .category-trip-desti {
+	min-width: 56%;
+	padding-right: 16px;
+}
+.category-trips-single.wpte_new-layout .category-trips-single-inner-wrap .category-trip-detail-wrap .category-trip-budget {
+	padding-left: 16px;
+}
+.wte-d-flex.category-grid .category-trips-single, .wte-d-flex.category-grid .wpte-trip-single, .wte-d-flex.wte-layout-grid .category-trips-single, .wte-d-flex.wte-layout-grid .wpte-trip-single {
+    padding: 0 15px !important;
+    margin: 0 0 1.5em 0 !important;
+}
+@media only screen and (max-width: 1024px) {
+    .trip-content-area {
+        max-width: 1250px;
+    }
+	.category-trips-single.wpte_new-layout .category-trips-single-inner-wrap .category-trip-detail-wrap .category-trip-desti {
+		min-width: 100%;
+    	padding-right: 0;
+	}
+	.category-trips-single.wpte_new-layout .category-trips-single-inner-wrap .category-trip-detail-wrap .category-trip-budget {
+		padding-left: 0;
+    	border: none;
+	}
+}
+/* ----- End custom trip ----- */
+
+/* Custom header */
+.mona-sec-header .searchBoxTggler {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 767px) {
+	.header-contact li {
+		font-size: 14px;
+	}
+	.mona-header-top .header-contact li i {
+		width: 24px;
+		height: 24px;
+		font-size: 12px;
+	}
+	.mona-user,
+	.mona-user .elementor-widget-travololanguageswitcher{
+		height: 80px;
+	}
+}
+
+
+/* Custom footer */
+.mona-footer-media img{
+	height: 15px !important; 
+	margin-bottom: 4px; 
+	padding-left: 5px;
+}
+
+/* Custom related trip */
+.wte-related-trips .category-trips-single-inner-wrap {
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.wte-related-trips .category-trips-single-inner-wrap .category-trip-content-wrap {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Custom blog */
+.vs-blog-details .blog-single {
+    box-shadow: 0px 13px 48px 0px rgb(76 175 80 / 12%);
+}
+
+/* Custom video box */
+.play-btn:before,
+.play-btn:after,
+.play-btn i,
+.mona-sec-video-box .play-btn:before,
+.mona-sec-video-box .play-btn:after,
+.mona-sec-video-box .play-btn i{
+	background-color: var(--theme-color);
+}
+.play-btn:hover:before,
+.play-btn:hover:after,
+.play-btn:hover i,
+.mona-sec-video-box .play-btn:hover:before,
+.mona-sec-video-box .play-btn:hover:after,
+.mona-sec-video-box .play-btn:hover i{
+	background-color: var(--theme-color2);
+}
+.mona-sec-video-box .gallery-text,
+.mona-sec-video-box .vs-btn:before,
+.mona-sec-video-box .vs-btn:after,
+.mona-sec-video-box .vs-btn:hover{
+	--theme-color: var(--primary-color);
+}
+
+/* hidden */
+#loader .table-cell {
+	display: none !important;
+}
